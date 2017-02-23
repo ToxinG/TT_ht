@@ -1,6 +1,6 @@
 type peano = Z | S of peano;;
 
-let rec peano_of_int x = match x with
+let rec peano_of_int x =
 	if (x == 0) then Z
 	else S (peano_of_int (x - 1));;
 
